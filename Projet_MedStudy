@@ -1,0 +1,22 @@
+
+Projet_MedStudy/
+│
+├── index.html
+├── Style.css
+│
+├── anatomie.html
+├── pathologies.html
+├── pharmacologie.html
+├── multimedia.html
+├── inscription.html
+│
+├── Images/
+│   ├── logo.png
+│   ├── hero-medical.jpg
+│   ├── anatomie.jpg
+│   ├── pathologies.jpg
+│   └── pharmacologie.jpg
+│
+└── Multimedia/
+    ├── cours.mp3
+    └── video.mp4
