@@ -1,0 +1,508 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Inscription | MedStudy</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">+</span>
+                MedStudy
+            </a>
+
+            <nav class="navigation">
+
+                <a href="index.html">Accueil</a>
+                <a href="anatomie.html">Anatomie</a>
+                <a href="pathologies.html">Pathologies</a>
+                <a href="pharmacologie.html">Pharmacologie</a>
+                <a href="multimedia.html">Multimédia</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- FORMULAIRE -->
+
+    <main class="inscription-page">
+
+        <div class="container">
+
+            <div class="form-heading">
+
+                <span class="section-label">
+                    Rejoignez MedStudy
+                </span>
+
+                <h1>Créer votre profil</h1>
+
+                <p>
+                    Remplissez le formulaire pour créer
+                    votre espace étudiant.
+                </p>
+
+            </div>
+
+
+            <form action="#" method="post"
+                  enctype="multipart/form-data">
+
+                <!-- IDENTITE -->
+
+                <fieldset>
+
+                    <legend>Identité</legend>
+
+                    <table>
+
+                        <tr>
+
+                            <td>
+                                <label>Civilité :</label>
+                            </td>
+
+                            <td>
+
+                                <label>
+                                    <input type="radio"
+                                           name="civilite"
+                                           value="Mr"
+                                           required>
+                                    Mr
+                                </label>
+
+                                <label>
+                                    <input type="radio"
+                                           name="civilite"
+                                           value="Mme">
+                                    Mme
+                                </label>
+
+                                <label>
+                                    <input type="radio"
+                                           name="civilite"
+                                           value="Mlle">
+                                    Mlle
+                                </label>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <label for="cin">CIN :</label>
+                            </td>
+
+                            <td>
+
+                                <input type="text"
+                                       id="cin"
+                                       name="CIN"
+                                       pattern="[0-9]{8}"
+                                       minlength="8"
+                                       maxlength="8"
+                                       inputmode="numeric"
+                                       title="La CIN doit contenir exactement 8 chiffres."
+                                       placeholder="12345678"
+                                       required>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <label for="nom">Nom :</label>
+                            </td>
+
+                            <td>
+
+                                <input type="text"
+                                       id="nom"
+                                       name="nom"
+                                       required>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <label for="prenom">Prénom :</label>
+                            </td>
+
+                            <td>
+
+                                <input type="text"
+                                       id="prenom"
+                                       name="prenom"
+                                       required>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <label>Langues :</label>
+                            </td>
+
+                            <td>
+
+                                <label>
+                                    <input type="checkbox"
+                                           name="langues"
+                                           value="Arabe">
+                                    Arabe
+                                </label>
+
+                                <label>
+                                    <input type="checkbox"
+                                           name="langues"
+                                           value="Francais">
+                                    Français
+                                </label>
+
+                                <label>
+                                    <input type="checkbox"
+                                           name="langues"
+                                           value="Anglais">
+                                    Anglais
+                                </label>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <label for="date">
+                                    Date de naissance :
+                                </label>
+                            </td>
+
+                            <td>
+
+                                <input type="date"
+                                       id="date"
+                                       name="date_naissance"
+                                       required>
+
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+                </fieldset>
+
+
+                <!-- COORDONNEES -->
+
+                <fieldset>
+
+                    <legend>Coordonnées</legend>
+
+                    <table>
+
+                        <tr>
+
+                            <td>
+                                <label for="adresse">
+                                    Adresse :
+                                </label>
+                            </td>
+
+                            <td>
+
+                                <input type="text"
+                                       id="adresse"
+                                       name="adresse"
+                                       required>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <label for="code">
+                                    Code postal :
+                                </label>
+                            </td>
+
+                            <td>
+
+                                <input type="text"
+                                       id="code"
+                                       name="code_postal"
+                                       pattern="[0-9]{4}"
+                                       maxlength="4"
+                                       required>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <label for="ville">
+                                    Ville :
+                                </label>
+                            </td>
+
+                            <td>
+
+                                <select id="ville"
+                                        name="ville"
+                                        required>
+
+                                    <option value="">
+                                        Choisir...
+                                    </option>
+
+                                    <option value="Tunis">
+                                        Tunis
+                                    </option>
+
+                                    <option value="Sfax">
+                                        Sfax
+                                    </option>
+
+                                    <option value="Sousse">
+                                        Sousse
+                                    </option>
+
+                                    <option value="Monastir">
+                                        Monastir
+                                    </option>
+
+                                    <option value="Nabeul">
+                                        Nabeul
+                                    </option>
+
+                                    <option value="Autre">
+                                        Autre
+                                    </option>
+
+                                </select>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <label for="telephone">
+                                    Téléphone :
+                                </label>
+                            </td>
+
+                            <td>
+
+                                <input type="tel"
+                                       id="telephone"
+                                       name="telephone"
+                                       required>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <label for="email">
+                                    E-mail :
+                                </label>
+                            </td>
+
+                            <td>
+
+                                <input type="email"
+                                       id="email"
+                                       name="email"
+                                       required>
+
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+                </fieldset>
+
+
+                <!-- DOCUMENTS -->
+
+                <fieldset>
+
+                    <legend>Documents à joindre</legend>
+
+                    <table>
+
+                        <tr>
+
+                            <td>
+                                <label for="photo">
+                                    Photo de profil :
+                                </label>
+                            </td>
+
+                            <td>
+
+                                <input type="file"
+                                       id="photo"
+                                       name="photo"
+                                       accept="image/*">
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <label for="cv">
+                                    CV (PDF) :
+                                </label>
+                            </td>
+
+                            <td>
+
+                                <input type="file"
+                                       id="cv"
+                                       name="cv"
+                                       accept=".pdf">
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <label for="diplomes">
+                                    Diplômes & certificats :
+                                </label>
+                            </td>
+
+                            <td>
+
+                                <input type="file"
+                                       id="diplomes"
+                                       name="diplomes"
+                                       accept=".pdf,.jpg,.jpeg,.png"
+                                       multiple>
+
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+                </fieldset>
+
+
+                <!-- COMMENTAIRE -->
+
+                <fieldset>
+
+                    <legend>Commentaire</legend>
+
+                    <label for="commentaire">
+                        Pourquoi souhaitez-vous rejoindre MedStudy ?
+                    </label>
+
+                    <textarea id="commentaire"
+                              name="commentaire"
+                              rows="5"
+                              placeholder="Écrivez votre commentaire ici..."></textarea>
+
+                </fieldset>
+
+
+                <!-- BOUTONS -->
+
+                <div class="form-buttons">
+
+                    <button type="submit" class="btn">
+                        Envoyer
+                    </button>
+
+                    <button type="reset"
+                            class="btn btn-reset">
+                        Réinitialiser
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container footer-bottom">
+
+            <p>
+                © Abderrahmen Toumi. Tous droits réservés.
+            </p>
+
+            <p>
+                Projet de Programmation Web
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
